@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PostCat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">PostCat<image src="images/LOGO.jpg" class="logo"></image></div>
+    <nav class="nav-links">
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <input type="text" placeholder="Search for products" id="search-bar">
+    </nav>
+    <div class="icons">
+      <span><a href="About us.html">About us</a></span>
+      <span>
+        <button id="login-logout-btn"><a href="login.html">👤</a></button>
+
+      </span>
+      <span>❤️</span>
+      <span></span><a href="Addtocart.html">🛒</a></span>
+      <span><a href="Payment.html">Payment</a></span>
+    </div>
+   
+      
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/banner1.jpg" alt="Banner 1">
+                <div class="content">
+                  <h1>Big Summer Sale</h1>
+                  <p>Up to 70% Off on All Brands</p>
+                  <a href="#" class="btn">Shop Now</a>
+                </div>
+              </div>
+          
+              <div class="slide">
+                <img src="images/banner2.webp" alt="Banner 2">
+                <div class="content">
+                  <h1>New Arrivals</h1>
+                  <p>Trendy Collection 2025</p>
+                  <a href="#" class="btn">Explore</a>
+                </div>
+              </div>
+          
+              <div class="slide">
+                <img src="images/banner3.jpg" alt="Banner 3">
+                <div class="content">
+                  <h1>Exclusive Deals</h1>
+                  <p>Limited Time Offer!</p>
+                  <a href="#" class="btn">Grab Now</a>
+                </div>
+              </div>
+          
+        </div>
+      </section>
+       <!-- Arrows -->
+  <div class="arrows">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  </section>
+
+  <!-- Filters -->
+  <aside class="filters">
+    <h3>Filter by Category</h3>
+    <label><input type="checkbox" class="filter" value="Men"> Men</label>
+    <label><input type="checkbox" class="filter" value="Women"> Women</label>
+    <label><input type="checkbox" class="filter" value="Kids"> Kids</label>
+  </aside>
+
+  <!-- Products Section -->
+  <main class="products" id="product-list">
+    <!-- Product cards will be inserted here by JavaScript -->
+  </main>
+
+<script src="script.js"></script>
+<footer class="footer bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row text-center text-md-left">
+
+      <!-- Brand Logo -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3" data-sr="fade-up">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">PostCat</h5>
+        <p>Discover latest trends in fashion. We deliver premium style at affordable prices. Join us today!</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" data-sr="fade-up">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+        <p><a href="index.html" class="text-light" style="text-decoration:none;">Home</a></p>
+        <p><a href="shop.html" class="text-light" style="text-decoration:none;">Shop</a></p>
+        <p><a href="login.html" class="text-light" style="text-decoration:none;">Login</a></p>
+        <p><a href="Sign Up.html" class="text-light" style="text-decoration:none;">Sign Up</a></p>
+      </div>
+
+      <!-- Help -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" data-sr="fade-up">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Help</h5>
+        <p><a href="#!" class="text-light" style="text-decoration:none;">FAQs</a></p>
+        <p><a href="#!" class="text-light" style="text-decoration:none;">Shipping</a></p>
+        <p><a href="#!" class="text-light" style="text-decoration:none;">Returns</a></p>
+        <p><a href="#!" class="text-light" style="text-decoration:none;">Support</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" data-sr="fade-up">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+        <p><i class="fas fa-home mr-3"></i> Gorakhpur, India</p>
+        <p><i class="fas fa-envelope mr-3"></i> contact@PostCat.com</p>
+        <p><i class="fas fa-phone mr-3"></i> +91 1234567890</p>
+      </div>
+
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Bottom Row -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8" data-sr="fade-up">
+        <p>© 2025 <strong class="text-warning">PostCat</strong> — All Rights Reserved</p>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-sr="fade-up">
+        <div class="text-center text-md-right">
+          <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ScrollReveal JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+  ScrollReveal().reveal('[data-sr]', {
+    distance: '30px',
+    duration: 1200,
+    easing: 'ease-out',
+    origin: 'bottom',
+    interval: 200
+  });
+</script>
+
+<!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment | PostCat</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .payment-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    .payment-heading {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    .btn-pay {
+      background: #ff4d6d;
+      border: none;
+    }
+    .btn-pay:hover {
+      background: #e8415e;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar (Optional) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">PostCat</a>
+  </div>
+</nav>
+
+<!-- Payment Section -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="payment-card">
+        <h2 class="payment-heading text-center">Secure Payment</h2>
+
+        <!-- Card Number -->
+        <div class="mb-3">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+        </div>
+
+        <!-- Card Holder Name -->
+        <div class="mb-3">
+          <label for="cardHolder" class="form-label">Cardholder Name</label>
+          <input type="text" class="form-control" id="cardHolder" placeholder="Your Name" required>
+        </div>
+
+        <!-- Expiry and CVV -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="expiryDate" class="form-label">Expiry Date</label>
+            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="password" class="form-control" id="cvv" placeholder="***" required>
+          </div>
+        </div>
+
+        <!-- Pay Button -->
+        <div class="d-grid">
+          <button class="btn btn-pay btn-lg">Pay Now</button>
+        </div>
+
+        <!-- OR -->
+        <div class="text-center my-4">
+          <span>OR</span>
+        </div>
+
+        <!-- UPI/Wallet Section -->
+        <div class="mb-3">
+          <label for="upiId" class="form-label">Pay via UPI</label>
+          <input type="text" class="form-control" id="upiId" placeholder="yourname@upi" required>
+        </div>
+
+        <div class="d-grid">
+          <button class="btn btn-outline-primary btn-lg">Pay via UPI</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center p-3 mt-5">
+  <small>© 2025 PostCat. All Rights Reserved.</small>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Simple alert after clicking pay -->
+<script>
+  document.querySelector('.btn-pay').addEventListener('click', function() {
+    alert('Payment Successful! Thank you for shopping with us.');
+    window.location.href = 'index.html'; // redirect to homepage
+  });
+</script>
+
+</body>
+</html>
